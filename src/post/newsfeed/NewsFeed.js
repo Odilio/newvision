@@ -45,7 +45,7 @@ class NewsFeed extends Component {
                   marginTop: 20
                 }}
               >
-                <p>Suggestions For You</p>
+                <p class="ant-empty-description">Suggestions For You</p>
                 <Empty />
               </Card>
             </Row>

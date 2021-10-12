@@ -23,6 +23,10 @@ body {
   color: white;
 }
 
+.ant-empty-description{
+  color: white;
+}
+
 .ant-menu-horizontal > .ant-menu-item > a{
   color:rgb(234 234 234 / 65%);
 
