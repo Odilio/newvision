@@ -24,7 +24,7 @@ class Login extends Component {
           <Row type="flex" justify="center">
             <Col pan={24}>
               <div className="logo-container">
-                <span>CriptoGram</span>
+                <span>New Vision</span>
               </div>
             </Col>
             <Col pan={24}>

@@ -98,20 +98,20 @@ class MeProfile extends Component {
             this.props.onUpdateCurrentUser(currentUser);
 
             notification.success({
-              message: "CriptoGram",
+              message: "New Vision",
               description: "Profile picture updated"
             });
           })
           .catch(error => {
             notification.error({
-              message: "CriptoGram",
+              message: "New Vision",
               description: "Something went wrong. Please try again!"
             });
           });
       })
       .catch(error => {
         notification.error({
-          message: "CriptoGram",
+          message: "New Vision",
           description:
             error.message || "Something went wrong. Please try again!"
         });
