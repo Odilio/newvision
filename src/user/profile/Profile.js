@@ -39,7 +39,8 @@ class Profile extends Component {
     posts: [],
     followLoading: false,
     isFollowing: false,
-    followText: "Follow"
+    followText: "Follow",
+    subText: "Subscribe"
   };
 
   componentDidMount = () => {
@@ -191,6 +192,32 @@ class Profile extends Component {
       );
     }
 
+    let subscribeBtn;
+
+    subscribeBtn = (
+      <Button
+        type="primary"
+        className="follow-btn"
+        loading={this.state.followLoading}
+        onClick={this.handleFollow}
+      >
+        {this.state.subText}
+      </Button>
+    );
+
+    let messageBtn;
+
+    messageBtn = (
+      <Button
+        type="secondary"
+        className="follow-btn"
+        loading={this.state.followLoading}
+        onClick={this.handleFollow}
+      >
+        Send Message
+      </Button>
+    );
+
     return (
       <div className="profile-container">
         <Row>
@@ -207,12 +234,16 @@ class Profile extends Component {
                 </Col>
                 <Col span={16}>
                   <Row>
-                    <Col span={9}>
+                    <Col span={8}>
                       <h1 className="username">
                         {this.state.currentUser.username}
                       </h1>
                     </Col>
+                    
+                    <Col span={6}>{messageBtn}</Col>
                     <Col span={4}>{followBtn}</Col>
+                    <Col span={4}>{subscribeBtn}</Col>
+                    
                   </Row>
                   <Row>
                     <Col span={15}>

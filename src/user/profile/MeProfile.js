@@ -252,6 +252,12 @@ class MeProfile extends Component {
                     </Col>
                   </Row>
                   <Row>
+                  <span>
+                  <span style={{ fontWeight: 700, marginRight: 5 }}>
+                    500</span>   Verticles
+                    </span>
+                  </Row>
+                  <Row>
                     <Col>
                       <h1 className="name">{this.state.currentUser.name}</h1>
                     </Col>
